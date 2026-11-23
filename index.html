@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEPSI - ຄວາມສົດຊື່ນທຸກເວລາ</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #f4f8ff;
+            color: #222;
+        }
+
+        /* HEADER */
+        header {
+            background: #004b93;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #ff3333;
+        }
+
+        /* HOME */
+        .hero {
+            min-height: 500px;
+            background: linear-gradient(120deg, #003b75, #008bd2);
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 50px 8%;
+            color: white;
+        }
+
+        .hero-text {
+            max-width: 500px;
+        }
+
+        .hero-text h1 {
+            font-size: 85px;
+            font-weight: bold;
+        }
+
+        .hero-text h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .hero-image img {
+            width: 300px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px #002b55;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ed1c24;
+            color: white;
+            padding: 14px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: white;
+            color: #004b93;
+        }
+
+        /* ABOUT */
+        .about {
+            padding: 65px 10%;
+            text-align: center;
+            background: white;
+        }
+
+        .about h2,
+        .products h2,
+        .contact h2 {
+            color: #004b93;
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        .about p {
+            font-size: 18px;
+            line-height: 2;
+        }
+
+        /* PRODUCTS */
+        .products {
+            padding: 65px 8%;
+            text-align: center;
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .product-card {
+            background: white;
+            width: 280px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px #ccd8e8;
+            transition: 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product-card h3 {
+            color: #004b93;
+            font-size: 23px;
+            margin: 15px 0;
+        }
+
+        .product-card p {
+            margin-bottom: 12px;
+        }
+
+        .product-card span {
+            color: #ed1c24;
+            font-weight: bold;
+        }
+
+        /* CONTACT */
+        .contact {
+            background: #dceeff;
+            padding: 55px 10%;
+            text-align: center;
+            line-height: 2;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                gap: 35px;
+            }
+
+            .hero-text h1 {
+                font-size: 55px;
+            }
+
+            .hero-image img {
+                width: 250px;
+                height: 280px;
+            }
+
+            .product-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">PEPSI</div>
+
+        <nav>
+            <a href="#home">ໜ້າຫຼັກ</a>
+            <a href="#about">ກ່ຽວກັບ</a>
+            <a href="#products">ສິນຄ້າ</a>
+            <a href="#contact">ຕິດຕໍ່</a>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+            <h1>PEPSI</h1>
+
+            <h2>ຄວາມສົດຊື່ນທຸກເວລາ</h2>
+
+            <p>
+                ສຳຜັດລົດຊາດຄວາມຊ່າສົດຊື່ນ
+                ກັບນ້ຳອັດລົມ Pepsi
+                ທີ່ພ້ອມເຕີມຄວາມສຸກ
+                ໃຫ້ທຸກມື້.
+            </p>
+
+            <a href="#products" class="btn">
+                ເບິ່ງສິນຄ້າ
+            </a>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=600"
+                alt="Pepsi Cola">
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <h2>ກ່ຽວກັບ Pepsi</h2>
+
+        <p>
+            Pepsi ແມ່ນເຄື່ອງດື່ມນ້ຳອັດລົມ
+            ທີ່ມີລົດຊາດເປັນເອກະລັກ
+            ແລະ ເປັນທີ່ຮູ້ຈັກໃນຫຼາຍປະເທດ.
+            ມີຄວາມສົດຊື່ນໃນທຸກໂອກາດ.
+        </p>
+
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products" id="products">
+
+        <h2>ຜະລິດຕະພັນຂອງພວກເຮົາ</h2>
+
+        <div class="product-container">
+
+            <div class="product-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=500"
+                    alt="Pepsi Original">
+
+                <h3>Pepsi Original</h3>
+
+                <p>ນ້ຳອັດລົມສູດດັ້ງເດີມ</p>
+
+                <span>ລົດຊາດເຂັ້ມຂຸ້ນ</span>
+
+            </div>
+
+            <div class="product-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1554866585-cd94860890b7?w=500"
+                    alt="Pepsi Can">
+
+                <h3>Pepsi Can</h3>
+
+                <p>ເປັບຊີກະປ໋ອງ</p>
+
+                <span>ສະດວກພົກພາ</span>
+
+            </div>
+
+            <div class="product-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1581636625402-29b2a704ef13?w=500"
+                    alt="Pepsi Refresh">
+
+                <h3>Pepsi Refresh</h3>
+
+                <p>ເຄື່ອງດື່ມເຢັນສົດຊື່ນ</p>
+
+                <span>ເໝາະສຳລັບທຸກໂອກາດ</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+        <h2>ຕິດຕໍ່ພວກເຮົາ</h2>
+
+        <p>ຂອບໃຈທີ່ເລືອກ Pepsi</p>
+
+        <p>Website: www.pepsi.com</p>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>© 2026 Pepsi Website | ສ້າງໂດຍ</p>
+
+    </footer>
+
+</body>
+</html>
